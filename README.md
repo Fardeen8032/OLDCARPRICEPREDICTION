@@ -37,11 +37,11 @@ https://oldcarpriceml.herokuapp.com
 ## Snapshot
 
 Home page. 
-![App Screenshot](https://raw.githubusercontent.com/Fardeen8032/OLDCARPRICEPREDICTION/master/images/img2.png?token=GHSAT0AAAAAABVQRMWCX7X6WJSZRBEJCACKYVR2THQ)
+![App Screenshot](https://github.com/Fardeen8032/OLDCARPRICEPREDICTION/blob/master/images/img2.png?raw=true)
 
 Predict page. 
-![App Screenshot](https://raw.githubusercontent.com/Fardeen8032/OLDCARPRICEPREDICTION/master/images/img3.png?token=GHSAT0AAAAAABVQRMWDLD53SMDFNZ32YJFWYVR2URQ)
+![App Screenshot](https://github.com/Fardeen8032/OLDCARPRICEPREDICTION/blob/master/images/img3.png?raw=true)
 
 Prediction page. 
-![App Screenshot](https://raw.githubusercontent.com/Fardeen8032/OLDCARPRICEPREDICTION/master/images/img4.png?token=GHSAT0AAAAAABVQRMWCUQQ5DSDD2TP2K6GCYVR2UYQ)
+![App Screenshot](https://github.com/Fardeen8032/OLDCARPRICEPREDICTION/blob/master/images/img4.png?raw=true)
 
