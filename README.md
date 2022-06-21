@@ -14,7 +14,7 @@ inputs.
 
 ## Feature Selection
 We select the features from the dataset that assist us in inferring meaningful insights.Mutual information gain technique is used to select the feature.It will return a score function that will tell us how much important is that feature is. 
-![App Screenshot](https://github.com/Fardeen8032/OLDCARPRICEPREDICTION/blob/master/images/img1.png?raw=true))
+![App Screenshot](https://github.com/Fardeen8032/OLDCARPRICEPREDICTION/blob/master/images/img1.png?raw=true)
 
 
 ## Algorithm
