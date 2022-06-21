@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(206, 92%, 94%);
+    padding: 10px;
+  }
+  .container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+  }
+   .container .title{
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    display: grid;
+    place-items: center;
+  }
+  .container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+
+  }
+  .user-details .input-box input{
+    height: 45px;
+    width: 100%;
+  }
+  .user-details .input-box select{
+    height: 45px;
+    width: 100%;
+  }
+  form .button{
+    height: 45px;
+    margin: 45px 0;
+  }
+  form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: rgb(75, 73, 73);
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background-color: hsl(206, 92%, 94%);;
+  }
+  form .button input:hover{
+    background: rgb(174, 233, 240);
+    cursor: pointer;
+  }
+  .para{
+    height: 45px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  @media (max-width:584px){
+    .container{
+      max-width: 100%;
+    }
+    form .user-details .input-box{
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    .container form .user-details{
+      max-height: 300px;
+    }
+    .user-details::-webkit-scrollbar{
+      width: 0;
+    }
+  }
+
+</style>
+<body>
+
+
+
+<div class="container">
+  <div class="title"><h1>Check Price of Used Car Whithin Seconds</h1></div>
+  <form action="{{ url_for('prediction')}}" method="post">
+    <div class="user-details">
+      <div class="input-box">
+        <span class="details"> Year</span>
+        <input type="text" id="Year" name="Year"  required ="required">
+      </div>
+      <div class="input-box">
+        <span class="details"> What is the Showroom Price?(In lakhs)</span>
+        <input type="text" id="price" name="price"  required="required">
+      </div>
+      <div class="input-box">
+        <span class="details"> How Many Kilometers Drived?</span>
+        <input type="text" id="third" name="Kms_Driven"  required="required">
+      </div>
+      <div class="input-box">
+        <span class="details"> How much owners previously had the car(0 or 1 or 3) ?</span>
+        <input type="text" id="fourth" name="Owner"  required="required">
+      </div>
+      <div class="input-box">
+        <span class="details"> What Is the Fuel type?</span>
+        <select id="fuel" name="Fuel_Type_Petrol" required="required">
+          <option value="Petrol">Petrol</option>
+          <option value="Diesel">Diesel</option>
+          <option value="CNG">CNG</option>
+        </select>
+      </div>
+      <div class="input-box">
+        <span class="details"> Are you A Dealer or Individual</span>
+        <select id="resea" name="Seller_Type_Individual" required="required">
+          <option value="Dealer">Dealer</option>
+          <option value="Individual">Individual</option>
+        </select>
+      </div>
+      <div class="input-box">
+        <span class="details"> Transmission type</span>
+        <select id="research" name="Transmission_Mannual" required="required">
+          <option value="Mannual">Manual Car</option>
+          <option value="Automatic">Automatic Car</option>
+        </select>
+      </div>
+      <div class="button">
+        <input type ="submit" value="getprice">
+      </div>
+
+    </div>
+  </form>
+  <h3 class="para">{{ prediction_text }}</h3>
+</div>
+</body>
+</html>
