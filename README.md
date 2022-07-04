@@ -28,9 +28,7 @@ Randomforest Regressor, Linear Regressor Algorithm applied to given dataset with
 **Programming Language:** Python
 
 
-## Demo
 
-https://oldcarpriceml.herokuapp.com
 
 
 
